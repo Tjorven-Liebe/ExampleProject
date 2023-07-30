@@ -22,6 +22,7 @@ public class MessageHandler {
             try {
                 file1.createNewFile();
                 configuration.load(new InputStreamReader(getClass().getClassLoader().getResourceAsStream(resource)));
+                configuration.save(file1);
             } catch (IOException | InvalidConfigurationException e) {
                 throw new RuntimeException(e);
             }
