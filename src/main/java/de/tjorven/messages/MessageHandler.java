@@ -32,7 +32,6 @@ public class MessageHandler {
     }
 
     public String getMessage(String key) {
-        return prefix + ChatColor.translateAlternateColorCodes('&', configuration.getString(key));
+        return ChatColor.translateAlternateColorCodes('&', prefix + configuration.getString(key));
     }
-
 }
