@@ -1,0 +1,3 @@
+prefix:
+  prefix: "PluginName | "
+  noperm: "Dazu hast du keine Rechte"
